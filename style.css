@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #00CCC0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-left: 20px;
+    font-family: 'Press Start 2P', cursive;
+    color: #211a1e  ;
+}
+
+header li {
+    display: inline-block;
+    font-family: 'Fira Code', monospace;
+    margin-right: 30px;
+}
+
+header li::before {
+    content: "";
+    display: inline-block;
+    background-color: #FF4858;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+header button {
+    margin-right: 20px;
+    background-color: #FF4858;
+    width: 170px;
+    height: 60px;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    box-shadow: 2px 2px 0px black;
+}
+
+/*-----------------------------------------------------------*/
+
+section.img {
+    border: 10px solid black;
+    overflow: hidden;
+    height: 807px;
+    position: relative;
+}
+
+section img {
+    object-fit: cover;
+    width: 100vw;
+    height: 807px;
+    object-position: top center;
+}
+
+div.profile-container {
+    background-color: rgb(27, 27, 27);
+    position: absolute;
+    z-index: 100;
+    top: 116px;
+    right: 62vw;
+    font-family: 'Press Start 2P', cursive;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 10px 10px 0px black;
+}
+
+div.profile-container h1 {
+    color: #FF4858;
+    font-size: 211%;
+    padding-bottom: 28px;
+    text-shadow: 5px 5px black;
+}
+
+div.profile-container h2 {
+    color: white;
+    font-size: 180%;
+    text-shadow: 5px 5px black;
+}
+
+/*-----------------------------------------------------------*/
+
+section.skills {
+    height: 807px;
+    background-color: #FF4858;
+}
+
+section.skills h1 {
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 2.5rem;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 5px 5px black;
+}
+
+section article {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.skill {
+    display: flex;
+    height: 90px;
+    margin-top: 16vh;
+    text-shadow: 3px 3px black;
+}
+
+div.skill img {
+    object-fit: cover;
+    width: 80px;
+    height: 100%;
+    margin-right: 23px;
+}
+
+div.skill h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+div.barra-skill {
+    display: inline-block;
+    width: 320px;
+    height: 40px;
+    background-image: linear-gradient(to right, #00ccc0 70%, white 30%);
+    border: 5px solid black;
+}
+
