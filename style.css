@@ -40,17 +40,27 @@ header li::before {
 header a {
     text-decoration: none;
     color: white;
-    
 }
 
-header button {
+header a:hover {
+    color:#fa061a
+}
+
+button.btn {
     margin-right: 20px;
     background-color: #FF4858;
+    color: white;
     width: 170px;
     height: 60px;
     font-family: 'Fira Code', monospace;
     font-size: 1rem;
     box-shadow: 2px 2px 0px black;
+    transition: transform 200ms linear;
+}
+
+button:hover {
+    transform: scale(1.07);
+    cursor: pointer;
 }
 
 /*-----------------------------------------------------------*/
@@ -67,6 +77,21 @@ section img {
     width: 100vw;
     height: 807px;
     object-position: top center;
+}
+
+section button {
+    position: absolute;
+    z-index: 100;
+    top: 338px;
+    color: white;
+}
+
+section button#btn1 {
+    left: 10%;
+}
+
+section button#btn2 {
+    left: 23%;
 }
 
 div.profile-container {
@@ -101,7 +126,7 @@ section.skills {
     background-color: #FF4858;
 }
 
-section.skills h1 {
+h1.title {
     color: white;
     text-align: center;
     padding-top: 80px;
@@ -124,6 +149,7 @@ div.skill {
 
 div.skill img {
     object-fit: cover;
+    object-position: center center;
     width: 80px;
     height: 100%;
     margin-right: 23px;
@@ -142,5 +168,35 @@ div.barra-skill {
     height: 40px;
     background-image: linear-gradient(to right, #00ccc0 70%, white 30%);
     border: 5px solid black;
+}
+
+/*-----------------------------------------------------------*/
+
+section.projetos {
+    background-color: #272727;
+}
+
+div.cube {
+    width: 280px;
+    height: 280px;
+    box-shadow: 10px 10px 0px #FFF;
+}
+
+div.container-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.container-img img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    box-shadow: 10px 10px 0 #fff;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+div.container-img img:hover {
+    transform: scale(1.1);
 }
 
