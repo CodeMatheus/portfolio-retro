@@ -238,10 +238,16 @@ form div.input-text {
 form div.input-msg {
     padding-bottom: 40px;
 }
-form div.input-msg input {
-    padding-bottom: 318px;
+form div.input-msg textarea {
     padding-top: 15px;
     text-align: justify;
+    display: block;
+    border: 5px solid black;
+    width: 100%;
+    font-family: 'Fira Code', monospace;
+    font-size: 20px;
+    padding-left: 10px;
+    resize: none;
 }
 
 .form {

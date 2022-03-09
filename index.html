@@ -13,10 +13,9 @@
 
         <nav>
             <ul>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contatos</a></li>
                 <a href="#"><button class="btn">Dowload CV</button></a>
             </ul>
         </nav>
@@ -32,7 +31,7 @@
         <button class="btn" id="btn2">Contatos</button>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skill">
         <h1 class="title">Skills</h1>
         <article>
             <div class="skill">
@@ -82,7 +81,7 @@
         </article>
     </section>
 
-    <section class="projetos">
+    <section class="projetos" id="projetos">
         <h1 class="title">Projetos</h1>
 
         <div class="container-img">
@@ -94,7 +93,7 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <h1 class="title">Contato</h1>
 
         <form action="#">
@@ -108,7 +107,7 @@
             </div>
             <div class="input-msg">
                 <label for="msg">Mensagem</label>
-                <input type="text-area" id="msg" name="msg" autocomplete="disabled">
+                <textarea name="msg" id="msg" rows="12"></textarea>
             </div>
             <button class="form">Enviar</button>
         </form>
