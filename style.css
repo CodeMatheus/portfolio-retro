@@ -87,11 +87,11 @@ section button {
 }
 
 section button#btn1 {
-    left: 10%;
+    right: 80vw;
 }
 
 section button#btn2 {
-    left: 23%;
+    right: 65vw;
 }
 
 div.profile-container {
@@ -291,4 +291,26 @@ footer a img {
     width: 45px;
     object-fit: cover;
     padding: 28px 0;
+}
+
+/*-----------------------------------------------------------*/
+
+@media screen and (max-width: 1416px) {
+    section button#btn1 {
+        display: none;
+    }
+    
+    section button#btn2 {
+        display: none;
+    }
+    section article {
+        display: inline-block;
+        margin-left: 10vw;
+    }
+    div.skill {
+        margin-top: 100px;
+    }
+    div.container-img {
+        display: inline-block;
+    }
 }
