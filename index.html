@@ -98,14 +98,28 @@
         <h1 class="title">Contato</h1>
 
         <form action="#">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
-            <label for="msg">Mensagem</label>
-            <input type="text" id="msg" name="msg">
-            <button class="btn-form">Enviar</button>
+            <div class="input-text">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div class="input-text">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="input-msg">
+                <label for="msg">Mensagem</label>
+                <input type="text-area" id="msg" name="msg" autocomplete="disabled">
+            </div>
+            <button class="form">Enviar</button>
         </form>
     </section>
+
+    <footer>
+        <div class="container">
+            <a href="#"><img src="twitter.png" alt="twitter-link"></a>
+            <a href="#"><img src="yt.png" alt="Youtube-link"></a>
+            <a href="#"><img src="discord.png" alt="discord-link"></a>
+        </div>
+    </footer>
 </body>
 </html>

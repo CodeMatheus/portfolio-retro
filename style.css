@@ -58,7 +58,7 @@ button.btn {
     transition: transform 200ms linear;
 }
 
-button:hover {
+button.btn:hover {
     transform: scale(1.07);
     cursor: pointer;
 }
@@ -209,11 +209,80 @@ section.contato {
 }
 
 form {
-    margin-top: 50px;
-    outline: 0;
+    margin-top: 40px;
+    font-family: 'Fira Code', monospace;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+form label {
+    color: white;
+    font-weight: 300;
 }
 
 form input {
     display: block;
+    height: 50px;
+    width: 100%;
+    border: 5px solid black;
+    font-family: 'Fira Code', monospace;
+    font-size: 20px;
+    padding-left: 10px;
 }
 
+form div.input-text {
+    padding-bottom: 20px;
+}
+
+form div.input-msg {
+    padding-bottom: 40px;
+}
+form div.input-msg input {
+    padding-bottom: 318px;
+    padding-top: 15px;
+    text-align: justify;
+}
+
+.form {
+    height: 60px;
+    width: 100%;
+    background-color: #FF4858;
+    position: relative;
+    top: 0;
+    transform: none;
+    margin-bottom: 47px;
+    font-family: 'Fira Code', monospace;
+    font-size: 30px;
+    font-weight: 300;
+    text-shadow: 2px 2px 0 black;
+}
+
+.form:hover {
+    cursor: pointer;
+    transform: scaleY(1.05);
+}
+
+/*-----------------------------------------------------------*/
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+footer div.container {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a:hover {
+    transform: scale(1.1);
+}
+
+footer a img {
+    width: 45px;
+    object-fit: cover;
+    padding: 28px 0;
+}
